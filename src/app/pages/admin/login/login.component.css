@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: 100% Arial, sans-serif;
+  text-decoration: none;
+  border: none;
+}
+
+::-moz-placeholder {
+  text-transform: capitalize;
+}
+
+:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+::placeholder {
+  text-transform: capitalize;
+}
+
+::-ms-reveal {
+  display: none;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #f0f4ff, #f9faff);
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  width: clamp(300px, 95%, 500px);
+  min-height: 100vh;
+  background: #fefefe;
+  border: 1.5px solid rgba(2, 4, 3, 0.3);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.container .forms {
+  width: 100%;
+}
+
+.container .forms .content {
+  display: none;
+  width: 100%;
+  padding: 20px 35px;
+  text-align: center;
+}
+
+.container .forms .content.active {
+  display: block;
+}
+
+.container .forms .content .title {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+  text-transform: capitalize;
+}
+
+.container .forms .content .continue-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  width: 100%;
+  margin: 10px 0 20px;
+  padding: 8px 0;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: rgba(2, 4, 3, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.container .forms .content .continue-button .logo {
+  width: 18px;
+  margin-right: 8px;
+}
+
+.container .forms .content .field {
+  border-top: 2px solid rgba(2, 4, 3, 0.2);
+}
+
+.container .forms .content .field legend {
+  font-size: 18px;
+  padding: 0 15px;
+  margin: 15px 0;
+}
+
+.container .forms .content .field .login-input {
+  display: inline-flex;
+  width: 100%;
+  margin: 10px 0;
+  background: #f0f0f0;
+  border-radius: 6px;
+}
+
+.container .forms .content .field .login-input:focus-within {
+  outline: 1.5px solid rgba(2, 4, 3, 0.5);
+}
+
+.container .forms .content .field .login-input .icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 100%;
+  background: transparent;
+}
+
+.container .forms .content .field .login-input #loginEmail,
+.container .forms .content .field .login-input #loginPassword,
+.container .forms .content .field .login-input #firstUsername,
+.container .forms .content .field .login-input #lastUsername,
+.container .forms .content .field .login-input #signUpEmail,
+.container .forms .content .field .login-input #phoneNumber,
+.container .forms .content .field .login-input #userPassword,
+.container .forms .content .field .login-input #fixPassword {
+  width: 100%;
+  height: 35px;
+  padding: 0 5px;
+  background: transparent;
+}
+
+.container .forms .content .field .login-input #loginEmail:focus,
+.container .forms .content .field .login-input #loginPassword:focus,
+.container .forms .content .field .login-input #firstUsername:focus,
+.container .forms .content .field .login-input #lastUsername:focus,
+.container .forms .content .field .login-input #signUpEmail:focus,
+.container .forms .content .field .login-input #phoneNumber:focus,
+.container .forms .content .field .login-input #userPassword:focus,
+.container .forms .content .field .login-input #fixPassword:focus {
+  outline: none;
+}
+
+.container .forms .content .field .login-input .fa-eye,
+.container .forms .content .field .login-input .fa-eye-slash {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+}
+
+.container .forms .content .field label[for=agree] {
+  float: left;
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.container .forms .content .field label[for=agree] .span {
+  color: #6d92f2;
+  font-weight: 600;
+}
+
+.container .forms .content .adjust {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.container .forms .signin {
+  font-size: 16px;
+  text-transform: capitalize;
+  width: 100%;
+  margin: 15px 0;
+  padding: 6px 0;
+  background: #ffffff;
+  border: 1.5px solid #6d92f2;
+  border-radius: 8px;
+}
+
+.container .forms .toggle-button {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  width: 100%;
+  margin-top: 15px;
+  padding: 6px 0;
+  color: #ffffff;
+  background: #6d92f2;
+  border-radius: 8px;
+  box-shadow: rgba(2, 4, 3, 0.15) 0px 3px 3px 0px;
+}

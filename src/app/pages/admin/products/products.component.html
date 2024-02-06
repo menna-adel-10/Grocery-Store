@@ -1,0 +1,109 @@
+<div class="row">
+  <div [ngClass]="isSidePanelVisible ? 'col-8' : 'col-12'">
+    <div class="card">
+      <div class="card-header bg-light-emphasis">
+        <div class="row">
+          <div class="col-6">Product List</div>
+          <div class="col-6 text-end">
+            <button class="btn btn-sm btn-success" (click)="openSidePanel()">
+              New
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card">
+              <img src="..." class="card-img-top" alt="..." />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-4" *ngIf="isSidePanelVisible">
+    <div class="card">
+      <div class="card-header bg-light-emphasis">
+        <div class="row">
+          <div class="col-6">New Product</div>
+          <div class="col-6 text-end">
+            <button class="btn btn-sm btn-success" (click)="closeSidePanel()">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-6">
+            <label for="">SKU</label>
+            <input type="text" [(ngModel)]="productObj.productSku" class="form-control">
+          </div>
+          <div class="col-6">
+            <label for="">Name</label>
+            <input type="text" [(ngModel)]="productObj.productName" class="form-control">
+          </div>
+          <div class="col-6">
+            <label for="">Short Name</label>
+            <input type="text" [(ngModel)]="productObj.productShortName" class="form-control">
+          </div>
+          <div class="col-6">
+            <label for="">Price</label>
+            <input type="number" [(ngModel)]="productObj.productPrice" class="form-control">
+          </div>
+          <div class="col-6">
+            <label for="">Category</label>
+            <input type="text" [(ngModel)]="productObj.categoryId" class="form-control">
+          </div>
+          <div class="col-6">
+            <label for="">Delivery Time Span</label>
+            <input type="time" [(ngModel)]="productObj.deliveryTimeSpan" class="form-control">
+          </div>
+          <div class="col-12">
+            <label for="">Image Url</label>
+            <input type="text" [(ngModel)]="productObj.productImageUrl" class="form-control">
+          </div>
+          <div class="col-12">
+            <label for="">Product Description</label>
+            <input type="text" [(ngModel)]="productObj.productDescription" class="form-control">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
