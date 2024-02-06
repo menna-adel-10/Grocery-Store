@@ -36,8 +36,8 @@ button {
 }
 
 .container {
-  width: clamp(300px, 95%, 500px);
-  min-height: 100vh;
+  width: clamp(300px, 95%, 450px);
+  max-height: 100vh;
   background: #fefefe;
   border: 1.5px solid rgba(2, 4, 3, 0.3);
   border-radius: 8px;
